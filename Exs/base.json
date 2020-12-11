@@ -1,0 +1,31 @@
+{
+	"Connection" : {
+		"Headers" : {
+			"Content-type" : "application/json; charset=UTF-8",
+			"Access-Control-Allow-Origin" : "http://localhost/EXS",
+			"Access-Control-Allow-Methods" : "GET, PUT, POST, DELETE"
+		}
+	},
+	"Database" : {
+		"host" : "localhost",
+		"port" : "3306",
+		"dbname" : "Mercadorias_do_Arnaldo",
+		"user" : "root",
+		"password" : ""
+	},
+	"Class" : [
+		{
+			"name" : "produto",
+			"attributes" : [
+				"id_prod",
+				"nome_prod",
+				"quantidade",
+				"datac",
+				"preco_de_compra_unitario",
+				"preco_de_compra_total",
+				"preco_de_venda_unitario",
+				"preco_de_venda_total"
+			]
+		}
+	]
+}
