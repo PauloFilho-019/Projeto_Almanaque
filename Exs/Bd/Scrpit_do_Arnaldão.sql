@@ -54,9 +54,3 @@ preco_de_venda_unitario) VALUES('Capinha_de_celular',
 '04/05/2020',
 '2.50',
 '5.00');
-
-UPDATE produto SET nome_prod='a',
-quantidade='3',
-datac='6',
-preco_de_compra_unitario='4.00',
-preco_de_venda_unitario='40.00' WHERE id_prod = 9;

@@ -1,13 +1,50 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-		<title>Central</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link rel="icon" type="imagem/png" href="estilo/icone.png"/>
-		<link rel="stylesheet" type="text/css" href="estilo/estilo.css"/>
-	  </head>
-	<body> 
-    
-    </body>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendas</title> 
+    <link rel="sortcut icon" href="Market_car-512.png" type="image/png" />;
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body onload="carregaNome()">
+    <div class="Regional">
+      <h1>Vendas</h1>
+      <div class="form1">
+        <form name="produto" method="POST" action="">
+           
+            <label class="abacaxi">NOME<select id="nome_prod" name="nome_prod" onchange="carregaDadosRest(this.value)">
+                <option name="nome" value="">...............................</option>
+           
+           </select></label>
+           <label class="abacaxi">QUANTIDADE<input type="number"   placeholder="...................................." id="quantidade" /></label>
+           <label class="abacaxi">PREÇO UNITÁRIO<input type="number" disabled placeholder="..............................." id="preco_de_venda_unitario" /></label>
+           
+          <input
+            class="btn"
+            type="button"
+            value="ADICIONAR"
+            id="botao"
+            onclick="adicionarLinhas()"
+          />
+        </form>
+      </div>
+      <div class="tableResult">
+        <table>
+          <thead>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <div class="penultima">
+        <div class="ultima" id="ultima">
+          
+        </div>
+      </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
 </html>

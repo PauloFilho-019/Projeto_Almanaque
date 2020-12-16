@@ -23,3 +23,5 @@
 			$pp->doDelete($_DELETE);
 			break;
 	}
+
+	?>
